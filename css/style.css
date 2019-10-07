@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.border-red {
+  margin: 30px 0px;
+  width: 65px;
+  height: 10px;
+  background-color: red;
+  border-radius: 20px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.red {
+  margin-top: 100px;
+  font-size: 50px;
+  color: red;
+}
+
+a,
+i {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.sidebar {
+  height: 105vh;
+  position: fixed;
+  width: 25%;
+  float: left;
+  background-color: #f44336;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    z-index: 999;
+    width: 60%;
+    top: 0px;
+    display: none;
+  }
+}
+
+.sidebar .close {
+  display: none;
+  text-align: center;
+  padding: 15px 0px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .sidebar .close {
+    display: block;
+  }
+}
+
+.sidebar .close:hover {
+  color: #000;
+  background-color: #d2d2d2;
+  cursor: pointer;
+}
+
+.sidebar .siderbar-content h1 {
+  padding: 100px 30px;
+}
+
+.sidebar .siderbar-menu {
+  margin: 0px 25px;
+}
+
+.sidebar .siderbar-menu ul li {
+  padding: 10px;
+}
+
+.sidebar .siderbar-menu ul li:hover {
+  background-color: #fff;
+}
+
+.sidebar .siderbar-menu ul li:hover a {
+  color: #000;
+}
+
+.sidebar .siderbar-menu ul li a {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.right-content {
+  width: 75%;
+  float: left;
+  position: relative;
+  left: 25%;
+}
+
+@media (max-width: 768px) {
+  .right-content {
+    width: 100% !important;
+    left: 0;
+  }
+}
+
+.right-content h1.brand {
+  font-size: 60px;
+  margin: 100px 0px 50px 0px;
+}
+
+.right-content .showcase .showcase-content .showcase-content-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.right-content .showcase .showcase-content .showcase-content-gallery img {
+  width: 50%;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .right-content .showcase .showcase-content .showcase-content-gallery img {
+    width: 100%;
+  }
+}
+
+.right-content .showcase .designer .our-designer h3 {
+  margin: 10px 0px;
+}
+
+.right-content .showcase .designer .our-designer .our-designer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.right-content .showcase .designer .our-designer .our-designer-items .our-designer-item {
+  background-color: #f1f1f1;
+  margin: 10px 5px;
+  width: 31.3333333%;
+}
+
+.right-content .showcase .designer .our-designer .our-designer-items .our-designer-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .right-content .showcase .designer .our-designer .our-designer-items .our-designer-item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  .right-content .showcase .designer .our-designer .our-designer-items .our-designer-item {
+    width: 100%;
+  }
+}
+
+.right-content .showcase .designer .our-designer .our-designer-items .our-designer-item h2 {
+  padding: 15px;
+}
+
+.right-content .showcase .designer .our-designer .our-designer-items .our-designer-item span {
+  color: gray;
+  padding: 0px 15px;
+}
+
+.right-content .showcase .designer .our-designer .our-designer-items .our-designer-item p {
+  padding: 15px;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items {
+  margin: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item {
+  text-align: center;
+  background-color: #f2f2f2;
+  width: 48%;
+}
+
+@media (max-width: 500px) {
+  .right-content .showcase .packages .packages-content .packages-content-items .packages-content-item {
+    width: 100%;
+    margin: 30px 0px;
+  }
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div {
+  font-size: 18px;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 15px 0px;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.basic {
+  padding: 30px 0px;
+  background-color: #616161;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.basic h1 {
+  color: #fff;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.pro {
+  padding: 30px 0px;
+  background-color: red;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.price p {
+  margin: 5px 0px;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.button button {
+  padding: 15px 30px;
+  color: #000;
+  border: none;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.button button:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.button-basic button {
+  background-color: #fff;
+}
+
+.right-content .showcase .packages .packages-content .packages-content-items .packages-content-item div.button-pro button {
+  color: #fff;
+  background-color: red;
+}
+
+.right-content .showcase .contact .contact-content h4 {
+  margin: 10px 0px;
+}
+
+.right-content .showcase .contact .contact-content input {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.right-content .showcase .contact .button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 15px 0px;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.right-content .showcase .contact .button:hover {
+  cursor: pointer;
+  background-color: #d2d2d2;
+  color: #000;
+}
+
+.right-content .footer {
+  padding: 50px 30px;
+  background-color: #d2d2d2;
+}
+
+.right-content .footer .footer-content {
+  float: right;
+}
+
+.header-top {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  display: none;
+  padding: 10px;
+  background-color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    display: block;
+  }
+}
+
+.header-top .hambur {
+  float: left;
+}
+
+.header-top .hambur .bar1,
+.header-top .hambur .bar2,
+.header-top .hambur .bar3 {
+  margin: 5px 0px;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.header-top h1 {
+  color: #fff;
+  margin-left: 50px;
+}
+/*# sourceMappingURL=style.css.map */
